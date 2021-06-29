@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="TEXTDiv"><h1>BreakTime!</h1></div>  
+  <div id="canvasDiv"><canvas id="pie-chart" width="800" height="450"></canvas></div>
+  <div id="TimeLeftDiv">Next Break in: 23m</div>
+  
+  <div id="ScheduleTable">
+    <table class="table table-striped" style="width: auto;">
+        <thead>
+          <tr>
+            <th scope="col" id="subject0">NAN</th>
+            <th scope="col" id="subjectTime0">NAN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="subject1" >NAN</td>
+            <td id="subjectTime1">NAN</td>
+          </tr>
+          <tr>
+            <td id="subject2">NAN</td>
+            <td id="subjectTime2">NAN</td>
+          </tr>
+          <tr>
+
+            <td id="subject3">NAN</td>
+            <td id="subjectTime3">NAN</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div id="MenuDiv">
+    <img id="MenuImage" src="/imgs/Dev Icon.png">
+    <img src="/imgs/gold coin.png" id="MenuCoin">
+    <div id="coinDivText">999</div>
+    <div id="MenuImageText">User</div>
+    <ul class="menulist">
+      <li onclick="Redirect('index.html')">Timer</li>
+      <li onclick="Redirect('shop.html')">Shop</li>
+      <li onclick="Redirect('options.html')">Options</li>
+    </ul>  
+  </div>
+  <script src="main.js"></script>
+  
+</body>
+</html>
